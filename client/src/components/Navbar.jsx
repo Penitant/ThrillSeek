@@ -14,7 +14,7 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <button className="bg-red-600 px-4 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition">
+          <button className="bg-black px-4 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition">
             Sign Up
           </button>
         </div>

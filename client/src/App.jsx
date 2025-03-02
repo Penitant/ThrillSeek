@@ -1,13 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import SmoothScroll from './components/SmoothScroll';
 
 function App() {
-
   return (
     <Router>
-      <Routes>
-        <Route path='/' element={<Home />} />
-      </Routes>
+      <SmoothScroll>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </SmoothScroll>
     </Router>
   )
 }

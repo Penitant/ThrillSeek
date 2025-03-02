@@ -1,6 +1,7 @@
 import "tailwindcss";
 import Navbar from "../components/Navbar";
 import Title from "../components/Title";
+import Info from "../components/Info";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
         <Navbar />
         <Title />
         {/* Content */}
+        <Info />
     </section>
   )
 }

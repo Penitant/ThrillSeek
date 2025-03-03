@@ -80,6 +80,14 @@ const Info = () => {
               Whether you're a seasoned rider or a first-timer, this high-octane sport guarantees heart-pounding excitement and pure off-road adventure.
               Master sharp turns, navigate tricky slopes, and embrace the thrill of the wild outdoors—because the dirtier, the better!
             </motion.p>
+            <motion.button
+              className="mt-6 bg-yellow-400 px-6 py-2 rounded-md text-black font-bold hover:bg-black hover:text-yellow-400 hover:border hover:border-yellow-400 transition"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isDirtbikeInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              Plans
+            </motion.button>
           </motion.div>
         </div>
         
@@ -116,6 +124,14 @@ const Info = () => {
               Experience the perfect blend of adrenaline and freedom as you zoom across lakes, oceans, or rivers.
               Feel the spray on your face as you perform tight turns, jumps, and spins—creating your own path on the endless blue playground!
             </motion.p>
+            <motion.button
+              className="mt-6 bg-yellow-400 px-6 py-2 rounded-md text-black font-bold hover:bg-black hover:text-yellow-400 hover:border hover:border-yellow-400 transition"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isJetskiInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              Plans
+            </motion.button>
           </motion.div>
         </div>
         
@@ -152,6 +168,14 @@ const Info = () => {
               There's nothing quite like the exhilaration of skydiving—feeling weightless as you soar through the open sky.
               Witness breathtaking panoramic views before your parachute opens, giving you a serene floating descent to complete this unforgettable adventure!
             </motion.p>
+            <motion.button
+              className="mt-6 bg-yellow-400 px-6 py-2 rounded-md text-black font-bold hover:bg-black hover:text-yellow-400 hover:border hover:border-yellow-400 transition"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isSkydivingInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              Plans
+            </motion.button>
           </motion.div>
         </div>
     </section>

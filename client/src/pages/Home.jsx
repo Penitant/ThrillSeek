@@ -4,6 +4,7 @@ import Lenis from 'lenis';
 import Navbar from "../components/Navbar";
 import Title from "../components/Title";
 import Info from "../components/Info";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const lenisRef = useRef();
@@ -44,6 +45,7 @@ const Home = () => {
         {/* Content */}
         <Info />
         {/* Footer */}
+        <Footer />
     </section>
   )
 }

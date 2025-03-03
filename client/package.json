@@ -17,6 +17,7 @@
     "@fontsource/roboto-condensed": "^5.1.1",
     "@heroui/navbar": "^2.2.13",
     "@tailwindcss/vite": "^4.0.9",
+    "lenis": "^1.1.22",
     "motion": "^12.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

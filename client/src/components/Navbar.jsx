@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import "tailwindcss";
 import logo from '../assets/svgs/logo.svg';
 
@@ -8,6 +9,7 @@ const Navbar = () => {
     const montserratStyle = {
       fontFamily: "'Montserrat', sans-serif"
     };
+    const navigate = useNavigate();
 
     return (
       <nav className="bg-black text-white p-4 flex justify-between items-center shadow-md relative z-50">
@@ -58,7 +60,7 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <button className="bg-yellow-400 px-6 py-2 rounded-md text-black font-bold hover:bg-black hover:text-yellow-400 hover:border hover:border-yellow-400 transition">
+          <button onClick={() => navigate('/sign-up')} className="bg-yellow-400 px-6 py-2 rounded-md text-black font-bold hover:bg-black hover:text-yellow-400 hover:border hover:border-yellow-400 transition">
             Sign Up
           </button>
         </div>
